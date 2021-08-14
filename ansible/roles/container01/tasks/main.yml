@@ -1,0 +1,4 @@
+---
+ - name: Cria serviço do container alura barbearia
+   shell: docker service create -p 8080:3000 -d aluracursos/barbearia
+   become: yes

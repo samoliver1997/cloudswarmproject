@@ -1,0 +1,16 @@
+---
+ - name: Configurando Managers
+   hosts: masters
+   roles:
+     - manager
+
+ - name: Configurando Workers
+   hosts: workers
+   roles:
+    - worker
+
+ - name: Subindo Serviço Container Alura Barbearia
+   hosts: masters
+   roles:
+    - container01
+
